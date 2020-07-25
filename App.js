@@ -1,87 +1,80 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+'use strict';
+exports.__esModule = true;
+var react_1 = require('react');
+var react_native_1 = require('react-native');
+var NewAppScreen_1 = require('react-native/Libraries/NewAppScreen');
+var App = function () {
+  var x = 2;
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
+      <react_native_1.StatusBar barStyle="dark-content" />
+      <react_native_1.SafeAreaView>
+        <react_native_1.ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
+          style={styles.scrollView}
+        >
+          <NewAppScreen_1.Header />
           {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
+            <react_native_1.View style={styles.engine}>
+              <react_native_1.Text style={styles.footer}>
+                Engine: Hermes
+              </react_native_1.Text>
+            </react_native_1.View>
           )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
+          <react_native_1.View style={styles.body}>
+            <react_native_1.View style={styles.sectionContainer}>
+              <react_native_1.Text style={styles.sectionTitle}>
+                Step One
+              </react_native_1.Text>
+              <react_native_1.Text style={styles.sectionDescription}>
+                Edit{' '}
+                <react_native_1.Text style={styles.highlight}>
+                  App.tsx
+                </react_native_1.Text>{' '}
+                to change this screen and then come back to see your edits.
+              </react_native_1.Text>
+            </react_native_1.View>
+            <react_native_1.View style={styles.sectionContainer}>
+              <react_native_1.Text style={styles.sectionTitle}>
+                See Your Changes
+              </react_native_1.Text>
+              <react_native_1.Text style={styles.sectionDescription}>
+                <NewAppScreen_1.ReloadInstructions />
+              </react_native_1.Text>
+            </react_native_1.View>
+            <react_native_1.View style={styles.sectionContainer}>
+              <react_native_1.Text style={styles.sectionTitle}>
+                Debug
+              </react_native_1.Text>
+              <react_native_1.Text style={styles.sectionDescription}>
+                <NewAppScreen_1.DebugInstructions />
+              </react_native_1.Text>
+            </react_native_1.View>
+            <react_native_1.View style={styles.sectionContainer}>
+              <react_native_1.Text style={styles.sectionTitle}>
+                Learn More
+              </react_native_1.Text>
+              <react_native_1.Text style={styles.sectionDescription}>
                 Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
+              </react_native_1.Text>
+            </react_native_1.View>
+            <NewAppScreen_1.LearnMoreLinks />
+          </react_native_1.View>
+        </react_native_1.ScrollView>
+      </react_native_1.SafeAreaView>
     </>
   );
 };
-
-const styles = StyleSheet.create({
+var styles = react_native_1.StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: NewAppScreen_1.Colors.lighter,
   },
   engine: {
     position: 'absolute',
     right: 0,
   },
   body: {
-    backgroundColor: Colors.white,
+    backgroundColor: NewAppScreen_1.Colors.white,
   },
   sectionContainer: {
     marginTop: 32,
@@ -90,19 +83,19 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: Colors.black,
+    color: NewAppScreen_1.Colors.black,
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: Colors.dark,
+    color: NewAppScreen_1.Colors.dark,
   },
   highlight: {
     fontWeight: '700',
   },
   footer: {
-    color: Colors.dark,
+    color: NewAppScreen_1.Colors.dark,
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
@@ -110,5 +103,4 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
-
-export default App;
+exports['default'] = App;

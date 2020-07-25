@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": "@react-native-community",
+  "rules": {
+    "strict": ["error", "never"]
+  }
+}
