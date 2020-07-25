@@ -29,7 +29,9 @@
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
+    "husky": "^4.2.5",
     "jest": "^25.1.0",
+    "lint-staged": "^10.2.11",
     "metro-react-native-babel-preset": "^0.59.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
@@ -46,5 +48,18 @@
       "json",
       "node"
     ]
+  },
+  "lint-staged": {
+    "*.+(js|ts|tsx)": [
+      "eslint"
+    ],
+    "**/*.+(js|json|ts|tsx)": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check-types && lint-staged"
+    }
   }
 }

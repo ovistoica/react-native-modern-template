@@ -19,8 +19,6 @@ import {
 declare const global: {HermesInternal: null | {}};
 
 const App = (): JSX.Element => {
-  const x: number = '2';
-
   return (
     <>
       <StatusBar barStyle="dark-content" />
