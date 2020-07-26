@@ -53,7 +53,7 @@
       "eslint",
       "jest --findRelatedTests"
     ],
-    "**/*.+(js|json|ts|tsx)": [
+    "**/*.+(js|json|ts|tsx|md)": [
       "prettier --write"
     ]
   },

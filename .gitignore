@@ -63,3 +63,4 @@ dist
 
 # jest
 coverage/
+.jest
