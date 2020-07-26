@@ -44,10 +44,11 @@ When you commit changes to your project, husky will run:
 
 If any of them fail, the commit will not be made. If you want to bypass the checks, add `--no-verify` as a parameter to `git commit`.
 
-### CI
+## :rocket: CI/CD
 
-After you commit to master, Travis will validate the build. This includes:
+To setup Travis, simply go to the [Travis Website](https://travis-ci.org) and setup your repo to support Travis. That is it 😃  
 
+After you commit to master, or when a PR is opened, Travis will validate the build. This includes:
 - typescript checks
 - eslint
 - prettier formatting
