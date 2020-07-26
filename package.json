@@ -6,7 +6,6 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "build": "react-native bundle --entry-file index.js --bundle-output dist/index.js",
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
@@ -16,7 +15,8 @@
     "format": "npm run prettier -- --write",
     "check-format": "npm run prettier -- --list-different",
     "check-types": "tsc",
-    "validate": "npm-run-all --parallel check-types check-format lint build test:coverage"
+    "check-build": "react-native bundle --entry-file index.js --bundle-output /dev/null",
+    "validate": "npm-run-all --parallel check-types check-format check-build lint test"
   },
   "dependencies": {
     "react": "16.13.1",
